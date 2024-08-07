@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap page 01</title>
+    <link rel="stylesheet" 
+    href="bootstrap.css">
+    <style>
+      .container-lg{
+        background-color: black;
+        color: white;
+      }
+      .col{
+        background-color: lightsalmon;
+        color: black;
+        border: 2px solid;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <h2>page 01</h2>
+    <!--containers-->
+    <!-- .container-fluid , .container-lg/sm/md these can also be used -->
+    <div class="container-fluid">
+      <div class="row align-item-center">
+        <div class="col">1st row,1st col</div>
+        <div class="col">1st row,2st col</div>
+        <div class="col">1st row,3rd col</div>
+        <div class="col">1st row,4th col</div>
+        <div class="col">1st row,5th col</div>
+        <div class="col">1st row,6th col</div>
+      </div>
+    </div>
+    <br><br><br>
+    <!--breakpoints-->
+    <div class="container-lg">
+      <div class="row align-item-center bg-primary">
+        <div class="col col-md-6 col-sm-12 col-lg-4 col-xl-2">1st row,1st col</div>
+        <div class="col col-md-6 col-sm-12 col-lg-4 col-xl-2">1st row,2st col</div>
+        <div class="col col-md-6 col-sm-12 col-lg-4 col-xl-2">1st row,2st col</div>
+        <div class="col col-md-6 col-sm-12 col-lg-4 col-xl-2">1st row,2st col</div>
+        <div class="col col-md-6 col-sm-12 col-lg-4 col-xl-2">1st row,2st col</div>
+        <div class="col col-md-6 col-sm-12 col-lg-4 col-xl-2">1st row,2st col</div>
+      </div>
+    </div>
+<br><br><br>
+<!-- This is element which is used to write the reference from the used source -->
+<footer class="blockquote-footer">by wikipedia</footer>
+
+<!-- dl:discription lists -->
+<div class="container mt-3">
+  <h1>Description Lists</h1>    
+  <p>The dl element indicates a description list:</p>
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>     
+</div>
+<!-- .text-muted(muted text), .text-primary(blue-imp), .text-success(green), .text-info(light blue), .text-warning(yellow), .text-danger(red), .text-secondary(grey), .text-white, .text-dark(black), .text-body (default body color/often black) and .text-light: -->
+
+
+<!-- opacity: .text-somecolor-50/100(required amount of opacity can be added) -->
+
+<!-- bg colors: .bg-somecolor -->
+
+<!-- table : 1)The .table class adds basic styling to a table
+             2)The .table-striped class adds zebra-stripes to a table
+             3)The .table-bordered class adds borders on all sides of the table and cells
+             4)The .table-hover class adds a hover effect (grey background color) on table rows
+             5)The .table-dark class adds a black background to the table
+             6)Combine .table-dark and .table-striped to create a dark, striped table
+          
+            7)-->
+<div class="container mt-3">
+  <h2>Striped Rows</h2>
+  <p>The .table-striped class adds zebra-stripes to a table:</p>            
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--The .table-responsive class adds a scrollbar to the table when needed (when it is too big horizontally) 
+.table-responsive-sm	< 576px
+.table-responsive-md	< 768px
+.table-responsive-lg	< 992px
+.table-responsive-xl	< 1200px
+.table-responsive-xxl	< 1400px
+-->
+<div class="container mt-3">
+  <h2>Responsive Table</h2>
+  <p>The .table-responsive class adds a scrollbar to the table when needed:</p>
+  
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Country</th>
+          <th>Sex</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Anna</td>
+          <td>Pitt</td>
+          <td>35</td>
+          <td>New York</td>
+          <td>USA</td>
+          <td>Female</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  </body>
+</html>
